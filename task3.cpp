@@ -2,7 +2,7 @@
 #include <iostream> 
 using namespace std; 
 
-// Function to draw the Tic-Tac-Toe board 
+// Function to draw a board 
 void drawBoard(char board[3][3]) 
 { 
 	cout << "-------------\n"; 
@@ -38,7 +38,7 @@ bool checkWin(char board[3][3], char player)
 
 int main() 
 { 
-	// Initialize the board and players 
+
 	char board[3][3] = { { ' ', ' ', ' ' }, 
 						{ ' ', ' ', ' ' }, 
 						{ ' ', ' ', ' ' } }; 
