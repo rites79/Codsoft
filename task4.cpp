@@ -4,13 +4,13 @@
 
 using namespace std;
 
-// Task structure to hold task details
+
 struct Task {
     string description;
     bool completed;
 };
 
-// Function prototypes
+
 void displayMenu();
 void addTask(vector<Task> &tasks);
 void viewTasks(const vector<Task> &tasks);
@@ -49,7 +49,6 @@ int main() {
     return 0;
 }
 
-// Function to display menu options
 void displayMenu() {
     cout << "\n===== To-Do List Manager =====\n";
     cout << "1. Add Task\n";
@@ -60,7 +59,6 @@ void displayMenu() {
     cout << "Enter your choice: ";
 }
 
-// Function to add a task
 void addTask(vector<Task> &tasks) {
     Task newTask;
     cout << "Enter task description: ";
@@ -71,7 +69,6 @@ void addTask(vector<Task> &tasks) {
     cout << "Task added successfully.\n";
 }
 
-// Function to view tasks
 void viewTasks(const vector<Task> &tasks) {
     if(tasks.empty()) {
         cout << "No tasks available.\n";
